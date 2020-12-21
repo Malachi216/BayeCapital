@@ -1,0 +1,558 @@
+<!doctype html>
+	<html>
+		<head>
+            <title>Baye Capital Home</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+            <link rel="stylesheet" href="Styles.css">
+            <style type="text/css">
+
+                html,body{
+                    background: rgba(37, 37, 37, 0.25);
+                    width: 100%;
+                    height: 1024px;
+                    margin: 0;
+                    padding: 0;
+                }
+                /* Desktop - 1 */
+                #desktop{
+                    position: relative;
+                    width: 1440px;
+                    height: 1024px;
+                    top:-10px;
+                    margin:auto;
+                    background: linear-gradient(180deg, rgba(44, 44, 44, 0) 0.77%, #020202 100%), url("black pattern 2 tiny.png"), #1A1918;
+                    box-shadow: inset 4px 4px 69px 79px rgba(0, 0, 0, 0.25);
+                }
+                #pagetop{
+                    position: absolute;
+                    width: 1344px;
+                    height: 55px;
+                    left: 60px;
+                    top: 22px;
+                }
+                #logo{
+                position: absolute;
+                width: 332px;
+                height: 110px;
+                left: 60px;
+                top: 14px;
+                }
+                #investButton{
+                    position: absolute;
+                    width: 107px;
+                    height: 34.6px;
+                    left: 1147px;
+                    top: 52px;
+                    background: rgba(0, 0, 0, 0.96);
+                    border: 1.5px solid #AD9747;
+                    box-sizing: border-box;
+                    border-radius: 40px;
+                    color: rgba(239, 239, 239, 0.77); 
+                    cursor: pointer;
+                    outline: transparent!important;
+                    z-index: 1;
+                }
+                #header{
+                    position: absolute;
+                    width: 1261px;
+                    height: 29px;
+                    left: 90px;
+                    top: 186px;
+                }
+                #pageheader{
+                    position: absolute;
+                    width: 1261px;
+                    height: 28px;
+                    top: 1px;
+
+                    background: linear-gradient(270deg, rgba(68, 54, 17, 0) 0%, rgba(13, 10, 5, 0.9) 14.58%, rgba(0, 0, 0, 0.9) 50.44%, rgba(21, 17, 8, 0.9) 86.98%, rgba(43, 35, 15, 0) 100%);
+                }
+                #headerbuttomborder{
+                    position: absolute;
+                    width: 1073px;
+                    height: 1px;
+                    left: 71px;
+                    top: 29px;
+
+                    background: rgba(37, 27, 0, 0.9);
+                    transform: matrix(1, 0, 0, -1, 0, 0);
+                }
+                #headertopborder{
+                    position: absolute;
+                    width: 1261px;
+                    height: 1px;
+                    left: 0px;
+                    top: 1px;
+
+                    background: rgba(37, 27, 0, 0.9);
+                    transform: matrix(1, 0, 0, -1, 0, 0);
+                }
+                #pagebg{
+                    position: absolute;
+                    width: 1440px;
+                    height: 683px;
+                    left: 0px;
+                    top: 0px;
+                }
+                #bgimage{
+                    position: absolute;
+                    width: 1440px;
+                    height: 594px;
+                    left: 0px;
+                    top: 206px;
+
+                    background: radial-gradient(66.63% 66.63% at 50% 33.37%, rgba(3, 3, 3, 0.29) 0%, rgba(0, 0, 0, 0.89) 65.27%, #000000 93.23%), url("—Pngtree—full matte grain texture flare_978975.jpg");
+                }
+                #ellipse{
+                    position: absolute;
+                    width: 1200px;
+                    height: 683px;
+                    left: 134px;
+                    top: 153px;
+
+                    background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+                    filter: blur(23px);
+                }
+                #headerlinks{
+                    position: absolute;
+                    width: 511px;
+                    height: 20px;
+                    left: 430px;
+                    top: 190px;
+                }
+                .headerlinkcontent{
+                    position: absolute;
+                    width: 40px;
+                    height: 19px;
+                    top: 1px;
+
+                    font-family: Segoe UI;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 19px;
+                    /* identical to box height */
+
+                    display: flex;
+                    align-items: center;
+                    text-decoration:none;
+                    color: rgba(239, 239, 239, 0.77); 
+                }
+                #homelink{
+                    position: absolute;
+                    left: 46px;
+                }
+                #aboutuslink{
+                    position: absolute;
+                    width: 65px;
+                    left: 166px;
+                }
+                #newslink{
+                    position: absolute;
+                    width: 45px;
+                    left: 306px;
+                }
+                #serviceslink{
+                    position: absolute;
+                    width: 70px;
+                    left: 426px;
+                }
+                #contactuslink{
+                    position: absolute;
+                    width: 85px;
+                    left: 546px;
+                }
+                .strokes{
+                    position: absolute;
+                    width: 40px;
+                    height: 19px;
+                    top: 1px;
+
+                    font-family: Segoe UI;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 19px;
+                    /* identical to box height */
+
+                    display: flex;
+                    align-items: center;
+                    text-decoration:none;
+                    color: rgba(239, 239, 239, 0.77); 
+                }
+                #stroke1{
+                    position: absolute;
+                    left: 116px;
+                }
+                #stroke2{
+                    position: absolute;
+                    left: 276px;
+                }
+                #stroke3{
+                    position: absolute;
+                    left: 396px;
+                }
+                #stroke4{
+                    position: absolute;
+                    left: 516px;
+                }
+                #pagecontent{
+                    position: absolute;
+                    width: 1051px;
+                    height: 409px;
+                    left: 209px;
+                    top: 224px;
+                }
+
+                #boldcontactus{
+                    position: absolute;
+                    width: 350px;
+                    height: 67px;
+                    left: 385px;
+                    top: 105px;
+
+                    font-family: Segoe UI;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 55px;
+                    line-height: 67px;
+                    /* identical to box height */
+
+                    display: flex;
+                    align-items: center;
+
+                    color: rgba(239, 239, 239, 0.77);               
+                }
+                #hrline{
+                    position: absolute;
+                    width: 301px;
+                    height: 13px;
+                    left: 375px;
+                    top: 174px;
+
+                }
+                #line1{
+                    position: absolute;
+                    width: 143px;
+                    height: 1px;
+                    left:20px;
+                    top: 11px;
+
+                    background: rgba(188, 176, 101, 0.7);
+                    border-radius: 1px;
+                }
+                #line2{
+                    position: absolute;
+                    width: 143px;
+                    height: 1px;
+                    left: 188px;
+                    top: 11px;
+
+                    background: rgba(188, 176, 101, 0.7);
+                    border-radius: 1px;
+                }
+                #middleicon{
+                    position: absolute;
+                    width: 15px;
+                    height: 13px;
+                    left: 169px;
+                    top: 0px;
+                }
+                #joinnow{
+                    position: absolute;
+                    width: 98px;
+                    height: 36px;
+                    left: 774px;
+                    top: 316px;
+
+                    background: rgba(0, 0, 0, 0.96);
+                    border: 1.5px solid #AD9747;
+                    box-sizing: border-box;
+                    border-radius: 40px;
+                    color: rgba(239, 239, 239, 0.77); 
+                    cursor: pointer;
+                    outline: transparent!important;
+                }
+                #footer{
+                    position: absolute;
+                    width: 787px;
+                    height: 156px;
+                    left: 341px;
+                    top: 852px;
+                }
+                #locationicon{
+                    position: absolute;
+                    width: 12px;
+                    height: 18px;
+                    top: 2px;
+                }
+                #location{
+                    position: absolute;
+                    width: 353px;
+                    height: 19px;
+                    left: 22px;
+                    top: 2px;
+
+                    font-family: Segoe UI;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 19px;
+                    /* identical to box height */
+
+                    display: flex;
+                    align-items: center;
+
+                    color: rgba(255, 255, 255, 0.75);
+                }
+                #ftstroke1{
+                    position: absolute;
+                    width: 5px;
+                    height: 19px;
+                    left: 385px;
+                    top: 2px;
+
+                    font-family: Segoe UI;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 19px;
+                    /* identical to box height */
+
+                    display: flex;
+                    align-items: center;
+
+                    color: rgba(255, 255, 255, 0.75);
+                }
+                #phoneicon{
+                    position: absolute;
+                    width: 15px;
+                    height: 17px;
+                    left: 412px;
+                    top: 4px;
+                }
+                #phoneno{
+                    position: absolute;
+                    width: 124px;
+                    height: 19px;
+                    left: 440px;
+                    top: 2px;
+
+                    font-family: Segoe UI;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 19px;
+                    /* identical to box height */
+
+                    display: flex;
+                    align-items: center;
+
+                    color: rgba(255, 255, 255, 0.75);
+                }
+                #ftstroke2{
+                    position: absolute;
+                    width: 5px;
+                    height: 19px;
+                    left: 585px;
+                    top: 2px;
+
+                    font-family: Segoe UI;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 19px;
+                    /* identical to box height */
+
+                    display: flex;
+                    align-items: center;
+
+                    color: rgba(255, 255, 255, 0.75);
+                }
+                #mailicon{
+                    position: absolute;
+                    width: 26px;
+                    height: 19px;
+                    left: 602px;
+                    top:4px;
+                }
+                #bayemail{
+                    position: absolute;
+                    width: 135px;
+                    height: 19px;
+                    left: 643px;
+                    top: 2px;
+
+                    font-family: Segoe UI;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 19px;
+                    /* identical to box height */
+
+                    display: flex;
+                    align-items: center;
+
+                    color: rgba(255, 255, 255, 0.75);
+                }
+                #mailicon2{
+                    position: absolute;
+                    width: 19px;
+                    height: 14px;
+                    left: 500px;
+                    top: 60px;
+                }
+                #ellipse4mail{
+                    position: absolute;
+                    width: 39px;
+                    height: 36px;
+                    left: 490px;
+                    top: 49px;
+
+                    border: 0.5px solid  rgba(255, 255, 255, 0.75);;
+                    box-sizing: border-box;
+                    border-radius: 40px;
+                }
+                #longellipse{
+                    position: absolute;
+                    width: 295px;
+                    height: 36px;
+                    left: 234px;
+                    top: 49px;
+                    padding-left: 10px;;
+
+                    border: 0.6px solid #C6C6C6;
+                    background-color: transparent!important;
+                    outline: transparent!important;
+                    box-sizing: border-box;
+                    border-radius: 40px;
+                    color: rgba(255, 255, 255, 0.75);
+                }
+                #ellipse1{
+                    position: absolute;
+                    width: 34px;
+                    height: 34px;
+                    left: 308px;
+                    top: 114px;
+
+                    border: 1.5px solid #AD9747;
+                    box-sizing: border-box;
+                    border-radius: 40px;
+                }
+                #ellipse2{
+                    position: absolute;
+                    width: 34px;
+                    height: 34px;
+                    left: 358px;
+                    top: 114px;
+
+                    border: 1.5px solid #AD9747;
+                    box-sizing: border-box;
+                    border-radius: 40px;
+                }
+                #ellipse3{
+                    position: absolute;
+                    width: 34px;
+                    height: 34px;
+                    left: 408px;
+                    top: 114px;
+
+                    border: 1.5px solid #AD9747;
+                    box-sizing: border-box;
+                    border-radius: 40px;
+                }
+                #fbicon{
+                    position: absolute;
+                    width: 13px;
+                    height: 25px;
+                    left: 317px;
+                    top: 119px;
+
+                }
+                #twittericon{
+                    position: absolute;
+                    width: 23px;
+                    height: 18px;
+                    left: 365px;
+                    top: 122px;
+
+                }
+                #callicon{
+                    position: absolute;
+                    width: 18px;
+                    height: 20px;
+                    left: 417px;
+                    top: 120px;
+
+                }
+			</style>
+
+		</head>
+		
+		<body>
+			<div id="desktop">
+                <div id="pagetop">
+                    <img src="baye capital f no bg.png" id="logo">
+                    <button id="investButton" type="button">INVEST NOW!</button>
+                </div>
+                <div id="pagebg">
+                    <div id="ellipse">
+                    </div>
+                    <div id="bgimage">
+                    </div>
+                </div>
+                <div id="header">
+                    <div id="headertopborder">
+                    </div>
+                    <div id="pageheader">
+                        
+                    </div>
+                    <div id="headerbuttomborder">
+                    </div>
+                </div>
+                <div id="headerlinks">
+                    <a id="homelink" href="baye.html" class="headerlinkcontent">HOME</a>
+                    <a id="stroke1" class="strokes">|</a>
+                    <a id="aboutuslink" href="baye about page.html" class="headerlinkcontent">ABOUT US</a>
+                    <a id="stroke2" class="strokes">|</a>
+                    <a id="newslink" href="baye news page.html" class="headerlinkcontent">NEWS</a>
+                    <a id="stroke3" class="strokes">|</a>
+                    <a id="serviceslink" href="baye services.html" class="headerlinkcontent">SERVICES</a>
+                    <a id="stroke4" class="strokes">|</a>
+                    <a id="contactuslink" href="baye contact page.html" class="headerlinkcontent">CONTACT US</a>
+                </div>
+                <div id="pagecontent">
+                    <div id="boldcontactus">ABOUT US</div>
+                    <div id="hrline">
+                        <div id="line1"></div>
+                        <div id="line2"></div>
+                        <img src="baye capital f no bg love.png" id="middleicon">
+                    </div>
+                    <button id="joinnow" type="button">JOIN NOW!</button>
+                </div>
+                <div id="footer">
+                    <img src="location icon copy white.png" id="locationicon">
+                    <div id="location">Baye Capital, No. 26, Ajakaye St., Mall Road, Abuja, Nigeria.</div>
+                    <div id="ftstroke1">|</div>
+                    <img src="icons8-phone-24 white.png" id="phoneicon">
+                    <div id="phoneno">+234 809 933 3315</div>
+                    <div id="ftstroke2">|</div>
+                    <img src="icons8-important-mail-100 white.png" id="mailicon">
+                    <div id="bayemail">arif@bayecapital.com</div>
+                    <img src="icons8-important-mail-100 gold.png" id="mailicon2">
+                    <input type="email" id="longellipse" name="email" placeholder="Enter Your Mail to Subscribe to our offers">
+                    <div id="ellipse4mail"></div>
+                    <div id="ellipse1"></div>
+                    <div id="ellipse2"></div>
+                    <div id="ellipse3"></div>
+                    <img src="icons8-facebook-f-144 gold.png" id="fbicon">
+                    <img src="icons8-twitter-48 gold.png" id="twittericon">
+                    <img src="icons8-phone gold.png" id="callicon">
+
+
+                </div>
+            </div>
+
+            <script src="JavaScript.js"></script>
+		</body>
+	</html>
