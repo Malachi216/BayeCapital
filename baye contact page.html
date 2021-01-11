@@ -390,7 +390,7 @@
 
                     color: #B9B9BA;
                 }
-                #email{
+                #email1{
                     position: absolute;
                     width: 438px;
                     height: 25px;
@@ -841,8 +841,8 @@
                         <form action="/action_page.php" method="get" id="form1">
                             <label for="fname" id="firstname">Your Name:</label><br>
                             <input type="text" id="fname" name="fname" placeholder="Surname First" required><br>
-                            <label for="email" id="emailaddress">Email Address:</label>
-                            <input type="text" placeholder="Enter Email" name="email" id="email" required>  
+                            <label for="email1" id="emailaddress">Email Address:</label>
+                            <input type="email" placeholder="Enter Email" name="email1" id="email1" required>  
                             <label for="themessage" id="message">Message</label><br>
                             <textarea type="text" id="themessage" name="themessage" style="resize: none;" placeholder="Enter Your Message" required></textarea>            
                             <button type="submit" form="form1" id="SendMessage" value="Submit" type="button">SEND MESSAGE</button>
@@ -857,7 +857,7 @@
                             <label for="fname2" id="firstname2">Your Name:</label><br>
                             <input type="text" id="fname2" name="fname2" placeholder="Surname First" required><br>
                             <label for="email2" id="emailaddress2">Email Address:</label>
-                            <input type="text" placeholder="Enter Email" name="email2" id="email2" required>  
+                            <input type="email" placeholder="Enter Email" name="email2" id="email2" required>  
                             <select id="select" name="select">
                             <option value="MakeInquiryAbout">Make Inquiry About...</option>
                             <option value="Private-Equity">Private-Equity</option>
@@ -883,7 +883,7 @@
                     <img src="icons8-important-mail-100 white.png" id="mailicon">
                     <div id="bayemail">arif@bayecapital.com</div>
                     <img src="icons8-important-mail-100 gold.png" id="mailicon2">
-                    <input type="email" id="longellipse" name="email" placeholder="Enter Your Mail to Subscribe to our offers">
+                    <input type="email" autocomplete="off" id="longellipse" name="email" placeholder="Enter Your Mail to Subscribe to our offers">
                     <div id="ellipse4mail"></div>
                     <div id="ellipse1"></div>
                     <div id="ellipse2"></div>
