@@ -1,3 +1,6 @@
+if (screen.width <= 699) {
+    document.location = "mobile.html";
+    }
 var body = document.body,
 html = document.documentElement;
 var height = Math.max( body.scrollHeight, body.offsetHeight, 
